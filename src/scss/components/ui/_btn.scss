@@ -1,0 +1,43 @@
+.btn-accent {
+  border-radius: 20px;
+  padding: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--light-color);
+  background-color: var(--accent);
+  transition: background-color var(--ui-transition) ease;
+
+  &:active {
+    background-color: #37985e;
+  }
+
+  @include hover {
+    background-color: #37985e;
+  }
+}
+
+.btn-second {
+  @include bg-cover;
+
+  border: 3px solid var(--light-color);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-image: url("../img/svg/plus.svg");
+  background-color: var(--attention);
+}
+
+.burger {
+  display: none;
+
+  @include small-tablet {
+    z-index: 10;
+    display: block;
+    border-radius: 8px;
+    /* stylelint-disable-next-line order/order */
+    @include burger;
+
+    /* stylelint-disable-next-line order/order */
+    --burger-height: 21px;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo" aria-label="logo"></a>
+        <nav class="nav" title="menu" data-menu>
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Mobile Top Up</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Rate</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="btn-reset btn-accent header__btn">Sign Up</button>
+        <div class="overlay" data-menu-overlay></div>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__body">
+            <h1 class="title h1 hero__title">Now Buy Your <br> PIN or <b>Top Up</b><br> With Bank Transfer</h1>
+            <p class="text hero__text"></p>
+            <button type="button" class="btn-reset btn-accent hero__btn">Get Started</button>
+            <form action="#" role="search" method="get" class="form hero__form">
+              <input type="search" name="search" class="input-reset form__input"
+                placeholder="Where do you want to call?" aria-label="name entry field" minlength="4" maxlength="12">
+              <button type="submit" class="btn-reset btn-accent form__btn" aria-label="search"></button>
+            </form>
+            <div class="users">
+              <ul class="list-reset users__list">
+                <li class="users__item">
+                  <a href="#">
+                    <img src="img/user-image-1.png" alt="user" class="users__image">
+                  </a>
+                </li>
+                <li class="users__item">
+                  <a href="#">
+                    <img src="img/user-image-2.png" alt="user" class="users__image">
+                  </a>
+                </li>
+                <li class="users__item">
+                  <a href="#">
+                    <img src="img/user-image-3.png" alt="user" class="users__image">
+                  </a>
+                </li>
+              </ul>
+              <button type="button" class="btn-reset btn-second users__btn" aria-label="more users"></button>
+              <span class="users__desc">45k+ Regular User. <a href="#">View Price Plan</a></span>
+            </div>
+          </div>
+          <div class="decor hero__decor">
+            <div class="decor__list anim-item anim-item--norepeat">
+              <div class="decor__item decor__item--uk"></div>
+              <div class="decor__item decor__item--in"></div>
+              <div class="decor__item decor__item--it"></div>
+              <div class="decor__item decor__item--in"></div>
+              <div class="decor__item decor__item--in"></div>
+              <div class="decor__item decor__item--uk"></div>
+            </div>
+            <picture class="picture decor__picture">
+              <source srcset="img/hero-image.avif" type="image/avif">
+              <source srcset="img/hero-image.webp" type="image/webp">
+              <img loading="lazy" src="img/hero-image.png" class="image" width="836" height="557" alt=""
+                aria-hidden="true">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

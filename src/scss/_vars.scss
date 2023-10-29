@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --content-width: 1110px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --ui-transition: 0.3s;
+
+  // colors
+  --light-color: #fff;
+  --light-green: #ecf7f3;
+  --accent: #48b774;
+  --attention: #ff8345;
+  --dark: #2d2d2d;
+  --gray: #4a4a4a;
+  --light-gray: #7c7c7c;
+}
